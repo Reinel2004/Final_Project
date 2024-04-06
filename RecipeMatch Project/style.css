@@ -1,0 +1,133 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    /* border: 1px solid red; */
+    
+}
+
+.navbar {
+    background-color: #fff; 
+    color: black; 
+    padding: 10px;
+    font-weight: 900;
+    align-items: center;
+    background-color: aliceblue;
+    width: 100%;
+    height: 6rem;
+}
+.bookmark-btn::before {
+    content: "\f02e"; /* Unicode for bookmark icon */
+    font-family: "Font Awesome 5 Free"; /* Font family containing the bookmark icon */
+    margin-right: 5px; /* Adjust as needed */
+}
+main .main-content{
+    background-image: url("assets/recipesbg.png");
+    height: 100vh;
+}
+.main-content img {
+    width: 350px;
+    margin: 4rem 0px 0px 4rem;
+    position: relative; /* Added */
+    z-index: 2;
+}
+
+.main-content img::before {
+    content: 'O';
+    top: 0;
+    left: 0;
+    background-color: blue;
+    width: 500px; /* Adjusted to match image width */
+    height: 100%; /* Added to cover the entire image */
+    position: absolute; /* Added */
+    z-index: 1;
+    opacity: 0.5; /* Adjusted opacity as needed */
+}
+
+main .main-content .header-content{
+    margin-top: 8rem;    
+}
+
+main .content{
+    background-color: #5C5C5C;
+    height: 160vh;
+}
+main .content .trash{
+    padding-left: 130px;
+}
+main .content .waste-content{
+    color: white;
+    background-color: rgba(255, 255, 255, 0.452);
+    height: 40vh;
+    text-align: justify;
+    padding: 20px 30px 0 20px ;
+    margin-bottom: 100px;
+}
+
+main .content .discover-icon{
+    padding-left: 130px;
+}
+main .content .discover-content{
+    color: white;
+    background-color: rgba(255, 255, 255, 0.452);
+    height: 40vh;
+    text-align: justify;
+    padding: 20px 30px 0 20px ;
+    margin-top: 20px;
+}
+main .recipes-content{
+    height: 100vh;
+}
+main .recipes-content h1{
+     padding-top: 40px;
+     margin-bottom: 40px;
+}
+main .recipes-content .row [class^="col-"] {
+    margin: 0 px 20px 5px;
+}
+
+
+
+
+.slider-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.card {
+    flex: 0 0 auto;
+    width: 300px; /* Set width of each card */
+    margin-right: 20px; /* Set margin between cards */
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+main .recipes-content .card img{
+    border-radius: 30px;
+}
+
+.prev-btn,
+.next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.452);
+    color: rgb(7, 5, 5);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
